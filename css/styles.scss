@@ -1,0 +1,66 @@
+$lt-gray : #ddd;
+$background-dark : darkcyan;
+$background-light : rgb(172, 232, 217);
+// Height variables
+$carousel-item-height: 200px;
+
+@mixin zero-margin ($pad-up-down,$pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.row-header {
+    @include zero-margin(0px, 0px);
+}
+
+.row-content {
+    border-bottom: 1px ridge;
+    @include zero-margin(20px, 0px);
+}
+.jumbotron {
+    background: darkcyan;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.footer {
+    background-color: $background-light;
+    @include zero-margin(20px, 0px);
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: crimson;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.tab-content {
+    border-right: 1px solid $lt-gray;
+    border-left: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+.carousel {
+    background-color: $background-dark;
+    .carousel-item {
+        height: $carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: $carousel-item-height;
+        }
+    }
+}
+
+#carouselButton {
+    right: 0;
+    bottom: 0;
+    position: absolute ;
+}
