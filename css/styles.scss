@@ -64,3 +64,14 @@ body {
     bottom: 0;
     position: absolute ;
 }
+
+.modal-header {
+    background-color: $background-dark;
+    color: floralwhite;
+    .close {
+        color: floralwhite;
+    }
+}
+.modal-body{
+    background-color: $background-light;
+}
